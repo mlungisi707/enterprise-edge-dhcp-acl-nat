@@ -8,7 +8,7 @@ This repository contains the verified deployment artifacts and real-time operati
 
 The layer 3 layout splits the local area network into isolated broadcast domains via 802.1Q Virtual Local Area Networks (VLANs), utilizing Router-on-a-Stick (ROAS) subinterfaces to enforce deterministic transit paths.
 
-![Network topology diagram](assets/01-topology-diagram.png)
+![Network topology diagram](01-topology-diagram.png)
 
 | Node | Interface / Subinterface | VLAN | IP Address | Subnet Mask | Gateway | Operational Role |
 |------|--------------------------|------|------------|-------------|---------|------------------|
