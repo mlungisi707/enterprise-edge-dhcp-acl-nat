@@ -26,7 +26,7 @@ The layer 3 layout splits the local area network into isolated broadcast domains
 
 The router's interface summary confirms that every subinterface is up and addressed as documented above, and the routing table shows the connected networks and the path toward the WAN.
 
-![Core router show ip interface brief](05-core-router-config.png)
+![Core router show ip interface brief](05-core-router-coonfigs.png)
 
 ![Core router show ip route](06-show-ip-route.png)
 
