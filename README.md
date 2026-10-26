@@ -26,9 +26,9 @@ The layer 3 layout splits the local area network into isolated broadcast domains
 
 The router's interface summary confirms that every subinterface is up and addressed as documented above, and the routing table shows the connected networks and the path toward the WAN.
 
-![Core router show ip interface brief](assets/05-core-router-config.png)
+![Core router show ip interface brief](05-core-router-config.png)
 
-![Core router show ip route](assets/06-show-ip-route.png)
+![Core router show ip route](06-show-ip-route.png)
 
 ## Technical Implementations & Verification Artifacts
 
@@ -40,15 +40,15 @@ To eliminate administrative overhead and avoid address overlap, the edge gateway
 
 **Client side, PC-A1:**
 
-![DHCP lease on PC-A1](assets/02-dhcp-lease-pc-a1.png)
+![DHCP lease on PC-A1](02-dhcp-lease-pc-a1.png)
 
 **Client side, PC-A2:**
 
-![DHCP lease on PC-A2](assets/03-dhcp-lease-pc-a2.png)
+![DHCP lease on PC-A2](03-dhcp-lease-pc-a2.png)
 
 **Server side, router binding table:**
 
-![DHCP lease table on the router](assets/04-dhcp-lease-table.png)
+![DHCP lease table on the router](04-dhcp-lease-table.png)
 
 ### 2. Zero-Trust Access Lists (Extended ACL Enforcement)
 
@@ -56,7 +56,7 @@ Granular, policy-based micro-segmentation is applied directly at the inbound lay
 
 **Observed Metrics:** The ACL counters document 1 permitted DNS match alongside 4 packet drops when testing access to the protected server segment.
 
-![ACL hit counters](assets/07-acl-hit-counters.png)
+![ACL hit counters](07-acl-hit-counters.png)
 
 ### 3. Port Address Translation (NAT Overload)
 
@@ -64,4 +64,4 @@ Private internal addressing schemes are non-routable over public internet infras
 
 **Observed Metrics:** The translation table maps inside private addresses to the edge gateway's WAN address during outbound connection tests.
 
-![NAT translation table](assets/08-nat-translation-table.png)
+![NAT translation table](08-nat-translation-table.png)
